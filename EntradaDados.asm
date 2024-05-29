@@ -13,7 +13,6 @@ global _start
 _start:
 
 ;Escreve a mensagem de prompt
-
 mov EAX, 0x4
 mov EBX, 0x1
 mov ECX, prompt
@@ -21,7 +20,6 @@ mov EDX, 0x14
 int 0x80
 
 ;Ler a entrada do usuário
-
 mov EAX, 0x3
 mov EBX, 0x0
 mov ECX, buffer
