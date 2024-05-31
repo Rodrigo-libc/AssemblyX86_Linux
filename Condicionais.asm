@@ -24,7 +24,7 @@ _start:
     int 0x80
     jmp Fim
 
-A_maior_que_B: ; Será executado caso condição seja verdadeira
+A_maior_que_B: ; Será executado caso a condição seja verdadeira
 
     mov EAX, 0x4
     mov EBX, 0x1
