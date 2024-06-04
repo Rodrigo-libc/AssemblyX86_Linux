@@ -6,7 +6,7 @@ RET_EXIT equ 0x0 ; Executado com Sucesso
 STD_IN equ 0x0 ; Entrada de dados padrão (Terminal)
 STD_OUT equ 0x1 ; Saida de dados padrão (Terminal)
 SYS_READ equ 0x3 ; Operação de Leitura
-SYS_WRITE equ 0x4 ; Operação de Scrita
+SYS_WRITE equ 0x4 ; Operação de Escrita
 SYS_CALL equ 0x80 ; Chamada de sistema
 
 section .data
