@@ -1,6 +1,6 @@
 segment .data
 LF equ 0xA ; Quebra Linha (Line Feed)
-NULL equ 0xD ; Final da String
+NULL equ 0xD ; Retorno de carro (carriage return)
 SYS_EXIT equ 0x1 ; Código de chamada para finalizar
 RET_EXIT equ 0x0 ; Executado com Sucesso
 STD_IN equ 0x0 ; Entrada de dados padrão (Terminal)
