@@ -14,6 +14,6 @@ _start:
     int 0x80
 
     mov EAX, 0x1
-    mov EBX, 0x0
+    XOR EBX, EBX
     int 0x80
 
