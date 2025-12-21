@@ -1,5 +1,16 @@
 # Aula 21 — Fluxo de CALL, pilha e retorno (x86)
 
+Endereço mais alto
+│
+│  EBP + 12 → Segundo argumento
+│  EBP + 8  → Primeiro argumento
+│  EBP + 4  → Endereço de retorno
+│  EBP + 0  → EBP antigo (salvo)
+│
+└── EBP (base da pilha da função)
+Endereço mais baixo
+
+
 ```mermaid
 flowchart TD
     subgraph MAIN["_start: (Entry Point)"]
