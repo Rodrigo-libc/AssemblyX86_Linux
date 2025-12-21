@@ -1,12 +1,20 @@
 # Aula 21 — Pilha, argumentos e retorno (x86)
 
-# Explicação dos argumentos:
-```
-EBP + 12  ;Segundo argumento
-EBP + 8   ;Primeiro argumento
-EBP + 4   ;Endereco de retorno
-EBP + 0   ;EBP antigo (salvo)
-```
+## Argumentos de funcao
+
+Antes de observar o fluxograma, e importante entender como os argumentos
+sao organizados na pilha quando uma funcao e chamada.
+
+Apos a instrucao:
+
+```asm
+PUSH EBP
+MOV  EBP, ESP
+
+EBP + 12  Segundo argumento
+EBP + 8   Primeiro argumento
+EBP + 4   Endereco de retorno
+EBP + 0   EBP antigo (salvo)
 
 ```mermaid
 flowchart TD
