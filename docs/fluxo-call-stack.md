@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TD
-    subgraph MAIN["_start (codigo chamador)"]
+    subgraph MAIN["_start: (codigo chamador)"]
         A1[PUSH tamanho]
         A2[PUSH ponteiro]
         A3[CALL print_msg]
@@ -16,14 +16,16 @@ flowchart TD
         B2[MOV EBP, ESP]
         B3[Ler arg1 em EBP+8]
         B4[Ler arg2 em EBP+12]
-        B5[sys_write]
-        B6[POP EBP]
-        B7[RET]
+        B5[MOV EAX, 0x4]
+        B6[MOV EBX, 0x1]
+        b7[int 0x80]
+        B8[POP EBP]
+        B9[RET]
     end
 
     A1 --> A2 --> A3
     A3 --> B1
-    B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7
+    B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7 --> B8 --> B9
     B7 --> A4 --> A5 --> A6
 
 
