@@ -16,7 +16,7 @@ MOV  EBP, ESP
 
 EBP + 12  Segundo argumento
 EBP + 8   Primeiro argumento
-EBP + 4   Endereco de retorno
+EBP + 4   Endereço de retorno
 EBP + 0   EBP antigo (salvo)
 ```
 
