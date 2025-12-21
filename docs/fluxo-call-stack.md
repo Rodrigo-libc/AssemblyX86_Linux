@@ -1,6 +1,6 @@
 # Aula 21 — Pilha, argumentos e retorno (x86)
 
-## Argumentos de funcao
+## Argumentos de função
 
 Antes de observar o fluxograma, é importante entender como os argumentos
 sao organizados na pilha quando uma função e chamada.
@@ -19,6 +19,7 @@ EBP + 8   Primeiro argumento
 EBP + 4   Endereço de retorno
 EBP + 0   EBP antigo (salvo)
 ```
+#Fluxograma do código:
 
 ```mermaid
 flowchart TD
