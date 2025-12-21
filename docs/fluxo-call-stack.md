@@ -8,7 +8,7 @@ sao organizados na pilha quando uma função e chamada.
 Os argumentos são acessados por deslocamento a partir de EBP,
 permitindo acesso estável independentemente de alterações no ESP.
 
-Apos a instrução:
+Após a instrução:
 
 ```asm
 PUSH EBP
