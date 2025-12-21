@@ -15,6 +15,7 @@ EBP + 12  Segundo argumento
 EBP + 8   Primeiro argumento
 EBP + 4   Endereco de retorno
 EBP + 0   EBP antigo (salvo)
+```
 
 ```mermaid
 flowchart TD
