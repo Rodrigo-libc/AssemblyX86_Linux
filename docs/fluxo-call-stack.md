@@ -3,9 +3,9 @@
 ## Argumentos de funcao
 
 Antes de observar o fluxograma, e importante entender como os argumentos
-sao organizados na pilha quando uma funcao e chamada.
+sao organizados na pilha quando uma função e chamada.
 
-Apos a instrucao:
+Apos a instrução:
 
 ```asm
 PUSH EBP
