@@ -1,12 +1,5 @@
 # Aula 21 — Fluxo de CALL, pilha e retorno (x86)
 
-## ✅ VERSÃO FINAL CORRIGIDA (copie e cole)
-
-Essa versão:
-- renderiza no GitHub
-- está fiel ao código
-- é visualmente clara para aula 21
-
 ```mermaid
 flowchart TD
     subgraph MAIN["_start (codigo chamador)"]
