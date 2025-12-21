@@ -21,6 +21,9 @@ EBP + 0   EBP antigo (salvo)
 ```
 # Fluxograma do código:
 
+
+
+
 ```mermaid
 flowchart TD
     subgraph MAIN["_start: (Entry Point)"]
