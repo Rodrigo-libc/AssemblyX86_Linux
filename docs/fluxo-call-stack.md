@@ -35,7 +35,7 @@ flowchart TD
         A6[int 0x80]
     end
 
-    subgraph FUNC["print_msg (função)"]
+    subgraph FUNC["print_msg (Função)"]
         B1[PUSH EBP]
         B2[MOV EBP, ESP]
         B3[Ler arg1 em EBP+8]
