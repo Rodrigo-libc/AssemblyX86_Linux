@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TD
-    subgraph MAIN["_start (codigo chamador)"]
+    subgraph MAIN["_start: (Entry Point)"]
         A1[PUSH tamanho]
         A2[PUSH ponteiro]
         A3[CALL print_msg]
