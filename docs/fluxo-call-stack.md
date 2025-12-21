@@ -1,24 +1,25 @@
 # Aula 21 — Fluxo de CALL, pilha e retorno (x86)
-
 flowchart TD
-    A[_start] --> B[PUSH tamanho]
-    B --> C[PUSH ponteiro]
-    C --> D[CALL print_msg]
+    subgraph MAIN["_start (codigo chamador)"]
+        A1[PUSH tamanho]
+        A2[PUSH ponteiro]
+        A3[CALL print_msg]
+        A4[ADD ESP, 8]
+    end
 
-    D --> E[CALL empilha retorno]
-    E --> F[Salto para print_msg]
+    subgraph FUNC["print_msg (funcao)"]
+        B1[PUSH EBP]
+        B2[MOV EBP, ESP]
+        B3[Ler arg1 em EBP+8]
+        B4[Ler arg2 em EBP+12]
+        B5[sys_write]
+        B6[POP EBP]
+        B7[RET]
+    end
 
-    F --> G[PUSH EBP]
-    G --> H[MOV EBP, ESP]
-
-    H --> I[EBP+8 para ECX (ponteiro)]
-    I --> J[EBP+12 para EDX (tamanho)]
-
-    J --> K[sys_write]
-    K --> L[POP EBP]
-    L --> M[RET]
-
-    M --> N[ADD ESP, 8]
-    N --> O[Continua execucao]
+    A1 --> A2 --> A3
+    A3 --> B1
+    B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7
+    B7 --> A4
 
 
