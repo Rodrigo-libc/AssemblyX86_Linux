@@ -1,8 +1,9 @@
 # Aula 21 — Fluxo de CALL, pilha e retorno (x86)
 
-```
-Endereco mais alto
 
+#Endereco mais alto
+
+```
 EBP + 12  Segundo argumento
 EBP + 8   Primeiro argumento
 EBP + 4   Endereco de retorno
@@ -10,7 +11,7 @@ EBP + 0   EBP antigo (salvo)
 
 EBP       Base da pilha da funcao
 Endereco mais baixo
-
+```
 
 ```mermaid
 flowchart TD
