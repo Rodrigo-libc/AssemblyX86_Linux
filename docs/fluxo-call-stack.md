@@ -1,6 +1,5 @@
 # Aula 21 — Fluxo de CALL, pilha e retorno (x86)
 
-```mermaid
 flowchart TD
     A[_start] --> B[PUSH tamanho]
     B --> C[PUSH ponteiro]
