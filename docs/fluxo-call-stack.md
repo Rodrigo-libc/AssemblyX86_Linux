@@ -1,10 +1,11 @@
-# Aula 21 — Fluxo de CALL, pilha e retorno (x86)
+# Aula 21 — Pilha, argumentos e retorno (x86)
 
+#Demonstração:
 ```
-EBP + 12  #Segundo argumento
-EBP + 8   #Primeiro argumento
-EBP + 4   #Endereco de retorno
-EBP + 0   #EBP antigo (salvo)
+EBP + 12  ;Segundo argumento
+EBP + 8   ;Primeiro argumento
+EBP + 4   ;Endereco de retorno
+EBP + 0   ;EBP antigo (salvo)
 ```
 
 ```mermaid
