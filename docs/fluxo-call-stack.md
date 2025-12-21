@@ -14,10 +14,10 @@ Após a instrução:
 PUSH EBP
 MOV  EBP, ESP
 
-EBP + 12  Segundo argumento
-EBP + 8   Primeiro argumento
-EBP + 4   Endereço de retorno
-EBP + 0   EBP antigo (salvo)
+EBP + 12  ;Segundo argumento
+EBP + 8   ;Primeiro argumento
+EBP + 4   ;Endereço de retorno
+EBP + 0   ;EBP antigo (salvo)
 ```
 # Fluxograma do código:
 
