@@ -39,16 +39,15 @@ o valor oficial mora na pilha.
 flowchart TB
     H[Endereços mais altos]
 
-    A1[EBP + 8\nArgumento\n(valor passado via PUSH)]
-    A2[EBP + 4\nEndereço de retorno\n(CALL)]
-    A3[EBP + 0\nEBP antigo\n(salvo)]
+    A1[EBP + 8 - Argumento - valor passado via PUSH]
+    A2[EBP + 4 - Endereço de retorno - CALL]
+    A3[EBP + 0 - EBP antigo - salvo]
 
     L[Endereços mais baixos]
 
     H --> A1 --> A2 --> A3 --> L
 
 ```
-
 
 
 
