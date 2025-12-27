@@ -35,17 +35,18 @@ o registrador é livre
 
 o valor oficial mora na pilha.
 
-```mermaid
-flowchart TB
-    H[Endereços mais altos]
+```nasm
+Endereços mais altos
+-------------------
+[EBP +12] : segundo parâmetro de print_msg / print_number (tamanho ou valor)
+[EBP +8]  : primeiro parâmetro de print_msg / print_number (ponteiro da string ou número)
+[EBP +4]  : endereço de retorno da função chamada (CALL)
+[EBP +0]  : EBP antigo (salvo)
+[EBP -4]  : número1 = 2
+[EBP -8]  : número2 = 3
+-------------------
+Endereços mais baixos
 
-    A1[EBP + 8 - Argumento - valor passado via PUSH]
-    A2[EBP + 4 - Endereço de retorno - CALL]
-    A3[EBP + 0 - EBP antigo - salvo]
-
-    L[Endereços mais baixos]
-
-    H --> A1 --> A2 --> A3 --> L
 
 ```
 
