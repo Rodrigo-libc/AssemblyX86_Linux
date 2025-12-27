@@ -1,5 +1,44 @@
 # Aula 21 — Pilha, argumentos, variáveis locais e retorno (x86 – Linux)
 
+```
+Uma das Regras fundamentais em Assembly
+
+Uma função não confia no estado dos registradores.
+Ela confia apenas na pilha (ou na convenção).
+
+Mesmo que na prática o EAX ainda tenha o valor, a função não pode assumir isso.
+
+O que acontece no mundo real (ABI / convenção)
+
+No x86 32-bit (cdecl):
+
+EAX, ECX, EDX → caller-saved
+
+Ou seja: podem ser destruídos a qualquer momento
+
+📌 Inclusive:
+
+pelo código entre o CALL e o uso
+
+por outra função
+
+por uma syscall
+
+por uma versão diferente do código amanhã
+
+Ponto-chave (essa é a virada mental)
+
+O PUSH não “passa o registrador”.
+Ele passa um valor congelado na pilha.
+
+Depois disso:
+
+o registrador é livre
+
+o valor oficial mora na pilha
+
+```
+
 ```mermaid
 flowchart TD
     START(["_start<br/>Entry Point"])
