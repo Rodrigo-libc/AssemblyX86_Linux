@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     START([_start<br/>Entry Point])
 
