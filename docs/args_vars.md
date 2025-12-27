@@ -35,6 +35,20 @@ o registrador é livre
 
 o valor oficial mora na pilha.
 
+```mermaid
+flowchart TB
+    H[Endereços mais altos]
+
+    A1[EBP + 8<br/>Argumento<br/>(valor passado via PUSH)]
+    A2[EBP + 4<br/>Endereço de retorno<br/>(CALL)]
+    A3[EBP + 0<br/>EBP antigo<br/>(salvo)]
+
+    L[Endereços mais baixos]
+
+    H --> A1 --> A2 --> A3 --> L
+```
+
+
 
 
 ```mermaid
