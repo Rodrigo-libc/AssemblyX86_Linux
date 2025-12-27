@@ -18,15 +18,13 @@ Ou seja: podem ser destruídos a qualquer momento
 
 📌 Inclusive:
 
-pelo código entre o CALL e o uso
-
 por outra função
 
 por uma syscall
 
 por uma versão diferente do código amanhã
 
-Ponto-chave (essa é a virada mental)
+🗝️ Ponto-chave (essa é a virada mental)
 
 O PUSH não “passa o registrador”.
 Ele passa um valor congelado na pilha.
@@ -35,7 +33,7 @@ Depois disso:
 
 o registrador é livre
 
-o valor oficial mora na pilha
+o valor oficial mora na pilha.
 
 
 
