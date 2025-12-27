@@ -3,6 +3,7 @@
 ## Uma das Regras fundamentais em Assembly
 
 Uma função não confia no estado dos registradores.
+
 Ela confia apenas na pilha (ou na convenção).
 
 Mesmo que na prática o EAX ainda tenha o valor, a função não pode assumir isso.
