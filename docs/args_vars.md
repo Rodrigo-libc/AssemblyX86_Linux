@@ -1,7 +1,6 @@
 # Aula 21 — Pilha, argumentos, variáveis locais e retorno (x86 – Linux)
 
-```
-Uma das Regras fundamentais em Assembly
+##Uma das Regras fundamentais em Assembly
 
 Uma função não confia no estado dos registradores.
 Ela confia apenas na pilha (ou na convenção).
@@ -37,7 +36,7 @@ o registrador é livre
 
 o valor oficial mora na pilha
 
-```
+
 
 ```mermaid
 flowchart TD
