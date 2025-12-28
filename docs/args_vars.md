@@ -38,18 +38,25 @@ o valor oficial mora na pilha.
 ```nasm
 Endereços mais altos
 -------------------
-[EBP +12] : segundo parâmetro de print_msg / print_number (tamanho ou valor)
-[EBP +8]  : primeiro parâmetro de print_msg / print_number (ponteiro da string ou número)
-[EBP +4]  : endereço de retorno da função chamada (CALL)
+[EBP +12] : segundo parâmetro = tam1 ou tam2
+[EBP +8]  : primeiro parâmetro = ponteiro da string (msg1 ou msg2)
+[EBP +4]  : endereço de retorno (CALL)
 [EBP +0]  : EBP antigo (salvo)
-[EBP -4]  : número1 = 2
-[EBP -8]  : número2 = 3
+[EBP -4]  : número1 = 2  (variável local do _start)
+[EBP -8]  : número2 = 3  (variável local do _start)
 -------------------
 Endereços mais baixos
 
-
+Endereços mais altos
+-------------------
+[EBP +8]  : primeiro parâmetro = resultado da soma
+[EBP +4]  : endereço de retorno (CALL)
+[EBP +0]  : EBP antigo (salvo)
+[EBP -4]  : número1 = 2  (variável local do _start)
+[EBP -8]  : número2 = 3  (variável local do _start)
+-------------------
+Endereços mais baixos
 ```
-
 
 
 ```mermaid
