@@ -26,7 +26,8 @@ por uma versão diferente do código amanhã
 
 🗝️ Ponto-chave (essa é a virada mental)
 
-O PUSH não “passa o registrador”.
+O PUSH não "passa o registrador".
+
 Ele passa um valor congelado na pilha.
 
 Depois disso:
