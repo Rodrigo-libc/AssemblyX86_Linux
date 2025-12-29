@@ -1,4 +1,4 @@
-# Aula 21 — Pilha, argumentos, variáveis locais e retorno (x86 – Linux)
+# Aula 22 — Pilha, argumentos, variáveis locais e retorno (x86 – Linux)
 
 ## Uma das Regras fundamentais em Assembly
 
